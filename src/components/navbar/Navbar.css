@@ -1,4 +1,4 @@
-/* Block: kzui-navbar */
+/* block */
 .kzui-navbar {
   display: flex;
   gap: 25px;
@@ -6,14 +6,12 @@
   border-bottom: 1px solid rgb(170, 168, 168);
   padding: 0px 20px 0px 20px;
 }
-
-/* Element: kzui-navbar__logo */
+/* element */
 .kzui-navbar__logo {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* Element: kzui-navbar__menu */
 .kzui-navbar__menu {
   list-style: none;
   margin: 0;
@@ -24,7 +22,6 @@
   gap: 25px;
 }
 
-/* Element: kzui-navbar__item */
 .kzui-navbar__item {
   padding-bottom: 20px;
   color: gray;

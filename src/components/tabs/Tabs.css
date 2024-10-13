@@ -1,0 +1,21 @@
+.kzui-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.kzui-tabs__tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.kzui-tabs__tab--active {
+  background-color: rgb(238, 238, 238);
+  color: black;
+  font-weight: bold;
+}
