@@ -9,22 +9,35 @@ import Tabs from "./components/tabs/Tabs";
 function App() {
   const [activeTab, setActiveTab] = useState(1);
 
-  const tabComponents = [<General />, <DesignSystem />, <Integration />];
+  const tabComponents = [
+    { key: "general", component: <General /> },
+    { key: "designSystem", component: <DesignSystem /> },
+    { key: "integration", component: <Integration /> },
+  ];
 
   return (
     <>
       <Navbar />
 
-      <h5 className="">Setting</h5>
-      <div className="container">
-        <div className="left-container">
-          <Tabs
-            tabs={["General", "DesignSystem", "Integration"]}
-            onTabChange={setActiveTab}
-          />
-        </div>
+      <div className="kzui-block">
+        <h5 className="kzui-title">Setting</h5>
 
-        <div className="right-container">{tabComponents[activeTab]}</div>
+        <div className="kzui-container">
+          <div className="kzui-container__left-container">
+            <Tabs
+              tabs={["General", "DesignSystem", "Integration"]}
+              onTabChange={setActiveTab}
+            />
+          </div>
+
+          <div className="kzui-container__right-container">
+            {tabComponents.map((tab, index) =>
+              index === activeTab ? (
+                <div key={tab.key}>{tab.component}</div>
+              ) : null
+            )}
+          </div>
+        </div>
       </div>
     </>
   );
