@@ -1,0 +1,18 @@
+.kzui-design-system-tab {
+  display: flex;
+  gap: 20px;
+}
+
+.kzui-design-system-tab__item {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-bottom: 2px solid transparent;
+  font-weight: normal;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+}
+
+.kzui-design-system-tab__item--active {
+  font-weight: bold;
+  border-bottom: 2px solid #040404; /* Active tab has a  bottom border */
+}

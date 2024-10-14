@@ -10,16 +10,16 @@
   min-height: 70vh;
 }
 
-/* Block: container, Element: left-container */
+/*Element: left-container */
 .kzui-container__left-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
 }
 
-/* Block: container, Element: right-container */
+/* Element: right-container */
 .kzui-container__right-container {
-  width: 60%;
+  width: 65%;
   border: 1px solid rgb(233, 233, 233);
   border-radius: 16px;
   padding: 10px;
