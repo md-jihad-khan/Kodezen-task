@@ -1,0 +1,26 @@
+.kzui-color-table {
+  width: 100%;
+  position: relative;
+}
+
+.kzui-color-table__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.kzui-color-table__column {
+  width: 50%;
+  text-align: left;
+}
+
+.kzui-colorList__btn-add {
+  display: flex;
+  background: transparent;
+  margin-top: 10px;
+  color: rgb(95, 95, 95);
+  border: none;
+}

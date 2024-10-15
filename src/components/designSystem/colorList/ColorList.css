@@ -1,0 +1,106 @@
+.kzui-color-list__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  touch-action: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Hover effect for the entire row */
+.kzui-color-list__row:hover {
+  background-color: #f9f9f9;
+}
+
+.kzui-color-list__title {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #747474;
+}
+
+.kzui-color-list__icon {
+  font-size: 19px;
+  color: black;
+}
+
+.kzui-color-list__valueitem {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kzui-color-list__value {
+  width: 60%;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.kzui-color-list__box {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kzui-color-list__color {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  padding: 5px 5px;
+}
+
+.kzui-color-list__menu-container {
+  position: relative;
+}
+
+.kzui-color-list__menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Initially hide the button */
+}
+
+/* Show the menu button only when hovering over the row */
+.kzui-color-list__row:hover .kzui-color-list__menu-button {
+  display: inline-block;
+}
+
+.kzui-color-list__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+  border-radius: 12px;
+}
+
+/* Show the menu only when the menu button is hovered */
+.kzui-color-list__menu-button:hover + .kzui-color-list__menu,
+.kzui-color-list__menu:hover {
+  display: block;
+}
+
+.kzui-color-list__menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.kzui-color-list__menu li:hover {
+  background-color: #f0f0f0;
+}

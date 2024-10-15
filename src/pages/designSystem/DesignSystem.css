@@ -1,17 +1,34 @@
-.design-tabs {
+.kzui-design-system__title {
+  font-size: 18px;
+}
+
+.kzui-design-system__tabs {
   display: flex;
   border-bottom: 1px solid rgb(224, 222, 222);
   border-top: 1px solid rgb(224, 222, 222);
-  margin: 10px 0px;
+  margin-top: 10px;
   justify-content: space-between;
 }
 
-.search-input {
+.kzui-design-system__search-wrapper {
+  position: relative;
+}
+
+.kzui-design-system__search-input {
   margin: 7px 0;
   border: 1px solid rgb(218, 218, 218);
   border-radius: 5px;
-  padding: 0px;
+  padding: 5px 5px 5px 35px; /* Extra left padding to make space for the icon */
   font-size: 12px;
-  padding: 0 10px;
   outline: none;
+}
+
+.kzui-design-system__search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888; /* Adjust icon color */
+  font-size: 18px; /* Adjust icon size */
+  pointer-events: none; /* Prevent the icon from being clickable */
 }

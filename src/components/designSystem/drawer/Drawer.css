@@ -1,0 +1,114 @@
+.kzui-drawer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 64vh;
+  border: 1px solid #e0e0e0;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kzui-drawer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.kzui-drawer__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding: 20px;
+}
+
+.kzui-drawer__title-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.kzui-drawer__title-input {
+  padding: 4px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 6px;
+  outline: none;
+}
+
+.kzui-drawer__color-container {
+  padding: 10px 20px;
+}
+
+.kzui-drawer__color-value-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.kzui-drawer__color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kzui-drawer__color-label {
+  font-size: 14px;
+}
+
+.kzui-drawer__color-input {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+}
+
+.kzui-color__value {
+  width: 60%;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.kzui-color__color {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  padding: 2px 5px;
+}
+
+.kzui-drawer__actions {
+  padding: 20px;
+  border-top: 1px solid rgb(224, 224, 224);
+  display: flex;
+  gap: 10px;
+}
+
+.kzui-drawer__btn-close {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.kzui-drawer__btn-save {
+  flex: 1;
+  padding: 10px;
+  background-color: #000000; /* Button background color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
